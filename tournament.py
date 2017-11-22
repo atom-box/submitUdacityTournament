@@ -21,7 +21,7 @@ def deleteMatches():
     db = connect()
     c = db.cursor()
     QUERY = 'UPDATE players SET starts=0 , wins=0;'
-    c.execute( QUERY )
+    c.execute(QUERY)
     db.commit()
     db.close()
     """Remove all the match records from the database."""
@@ -31,7 +31,7 @@ def deletePlayers():
     db = connect()
     c = db.cursor()
     QUERY = 'delete from players;'
-    c.execute( QUERY )
+    c.execute(QUERY)
     db.commit()
     db.close()
     """Remove all the player records from the database."""
